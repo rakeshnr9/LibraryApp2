@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <header>
+
+
+      <div class="head-tag">
+
+       <a href="/">HOME</a>
+       <a href="<%=nav[3].link%>">LOGIN</a>
+       <a href="<%=nav[4].link%>">SIGNUP</a>
+      </div>
+   </header>
+
+      <div class="head-tag2" >
+        <h1>Library</h1>
+      </div>
+      <div class="container" id="c1">
+    <lable for="error" id="error"></lable>
+    <lable for="error1" id="error1"></lable>
+    <label for="errorpass" id="errorpass"></label>
+          <form onsubmit= "return validEmailId()" action="<%=nav[0].link%>"  >
+
+               <h1 style="text-align: center; font-family: 'Oswald', sans-serif;">Sign In</h1>
+               <p style="font-family: 'Oswald', sans-serif;">Already have an account please login.</p>
+               <hr>
+               <label for="email" style="font-family: 'Oswald', sans-serif;"><b>Username</b></label>
+               <input type="text" style="font-family: 'Oswald', sans-serif;" placeholder="Email Id " id="email" required>
+               <label for="password" style="font-family: 'Oswald', sans-serif;"><b>Enter Password</b></label>
+               <input type = "password" style="font-family: 'Oswald', sans-serif;" id="pass" placeholder="Password" required maxlength="15" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+
+               <label for="errorpass" id="errorpass"></label>
+
+
+               <div class="clearfix">
+
+                <button type="submit" class="signupbtn">Submit</button>
+                <button type="button" class="cancelbtn"><a href="<%=nav[0].link%>" style="color: white;">Forget Password</a></button>
+            </form>
+         </div>
+        </div>
+
+       <script src="/js/signin.js"></script>
+
+
+
+</body>
+<footer>
+    <h2>Follow Us</h2>
+<button class="twit" ><a class="ft" href="www.twitter.com">Twitter</a></button><button class="face"><a class="ft" href="www.facebook.com">Facebook</a></button><button class="goog"><a class="ft" href="www.googleplus.com">Google+</a></button>
+
+
+
+</footer>
+
+</html>
